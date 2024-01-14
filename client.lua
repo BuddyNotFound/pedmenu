@@ -22,8 +22,3 @@ RegisterNetEvent('bbv-switchped',function(data)
     SetPlayerModel(player, model)
     SetModelAsNoLongerNeeded(model)
 end)
-
-RegisterNetEvent('bbv-resetped',function(data)
-  if QBCore == nil then QBCore = exports['qb-core']:GetCoreObject() end
-  TriggerServerEvent("qb-clothes:loadPlayerSkin") 
-end)
